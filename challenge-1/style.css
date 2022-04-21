@@ -1,0 +1,45 @@
+:root {
+    --color-bg-hero:rgb(251,46,1);
+    --color-font-hero:rgb(255,254,179);
+
+    --font-family:'Lora', serif;
+    --font-title:'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    line-height: calc(2px + 2.5ex + 2px);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.parent {
+    width: min(90%,80em);
+    margin-inline: auto;
+    background-color: var(--color-bg-hero);
+    color: var(--color-font-hero);
+}
+
+.child {
+    display: grid;
+    gap: 1rem;
+    width: 50%;
+    padding: 5rem 0 5rem 3rem;
+}
+
