@@ -29,17 +29,20 @@ h3 {
     line-height: 1;
 }
 
+header {
+    background-color: var(--color-bg-hero);
+    color: var(--color-font-hero);
+}
+
 .parent {
     width: min(90%,80em);
     margin-inline: auto;
-    background-color: var(--color-bg-hero);
-    color: var(--color-font-hero);
 }
 
 .child {
     display: grid;
     gap: 1rem;
     width: 50%;
-    padding: 5rem 0 5rem 3rem;
+    padding: 6rem 0 6rem 3rem;
 }
 
