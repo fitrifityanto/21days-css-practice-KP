@@ -1,0 +1,70 @@
+:root {
+    --color-bghero : hsl(192, 36%, 21%);
+    --color-hero-accent:hsl(184, 68%, 53%, 1);
+    --color-white:hsl(0, 0%, 100%);
+
+    --fontfamily:'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontfamily);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+button {
+    border: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-bghero);
+}
+
+.container {
+    width: min(100% - 2rem, 74.75rem);
+    margin-inline: auto;
+}
+
+.intro-hero {
+    max-width: 710px;
+    padding: 9.25rem 0 9.1875rem 0;
+    color: var(--color-white);
+}
+
+.intro-hero p,
+.intro-hero button {
+    font-size: 1.3125rem;
+}
+
+.intro-hero p {
+    line-height: 1.5;
+    margin: 1.3125rem 0 3.5rem;
+}
+
+.intro-hero button {
+    font-weight: 700;
+    border-radius: 1.96875rem;
+    padding: 1rem 3rem .9375rem 3.0625rem;
+    background-color: var(--color-hero-accent);
+}
