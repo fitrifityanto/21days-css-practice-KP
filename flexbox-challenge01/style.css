@@ -1,0 +1,119 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+   *, *::before, *::after {
+       margin: 0;
+       padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-bottom: 1.3rem;
+    font-size: 2.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.fluid {
+    width: 100%;
+    background-color: #136C72;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.row {
+    /* display: flex => flex container */
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.first {
+    padding: 115px 0;
+}
+
+.first h2 {
+    color: #87629A;
+}
+
+.second {
+    color: white;
+    padding: 100px 0;
+}
+
+.col {
+    /* these are now flex items */
+    text-align: center;
+    width: 100%;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
