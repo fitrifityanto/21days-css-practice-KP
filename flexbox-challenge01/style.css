@@ -40,6 +40,11 @@ h2 {
     font-size: 2.25rem;
 }
 
+h1,
+h2 {
+    text-align: center;
+}
+
 p {
     line-height: 1.5;
 }
@@ -84,7 +89,7 @@ p {
 
 .col {
     /* these are now flex items */
-    text-align: center;
+    text-align: justify;
     width: 100%;
 }
 
